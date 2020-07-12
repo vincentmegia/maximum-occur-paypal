@@ -7,10 +7,12 @@ package com.vincentmegia;
 public class App 
 {
     public static void main( String[] args ) {
-        //System.out.println( "Hello World!" );
+    }
+
+    public String process(String text) {
         var combinationProcessor = new CombinationProcessor();
-        combinationProcessor.process("banana");
+        combinationProcessor.process(text);
         var maxText =combinationProcessor.getMaxText();
-        System.out.println(maxText);
+        return maxText;
     }
 }

@@ -13,8 +13,9 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
-    {
+    public void shouldAnswerWithTrue() {
+        var app = new App();
+        var result = app.process("banana");
         assertTrue( true );
     }
 }
